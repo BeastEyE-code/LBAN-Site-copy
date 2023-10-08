@@ -25,20 +25,8 @@
         }
       .carousel-item {
         color: white;
-        min-height: 300px;
         background: no-repeat scroll center scroll;
         background-size: cover;
-      }
-      .carousel-item::before{
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: #00;
-        opacity: 0.7;
       }
 
       .navbar {
@@ -47,8 +35,6 @@
     .sideBar {
       display: flex;
       align-items: center;
-      height: 100vh;
-      width: 100px;
     }
     .logoLotus1{
         display: flex;
@@ -62,7 +48,15 @@
         align-items: center;
         justify-content: center;
         height: 65vh;
-        background: #540fd4;
+        background: #2c007d;
+    }
+    .logoLotus3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 65vh;
+        background: #39029fb0;
     }
     .sideBarIcons {
       color: rgba(116, 110, 110, 0.474);
@@ -91,6 +85,21 @@
         writing-mode: vertical-lr;
         text-orientation: upright;
     }
+    .toggler{
+      color: #2c007d;
+    }
+    .togglerBg{
+      display: flex;
+      justify-content: center;
+      padding-left: 6rem;
+      background: #2c007d80;
+      color: white;
+      height: 100vh;
+      margin-left: 5rem;
+    }
+    .offcanvas-header{
+      margin-top: 7rem;
+    }
     </style>
   </head>
   <body>
@@ -106,15 +115,43 @@
               <li class="nav-item mb-4 mt-5">
                 <img src="/asset/image (1).webp" class="image" alt="">
               </li>
-              <li class="nav-item mb-3">
-                <a
-                  class="bi bi-list sideBarIcons active"
-                  aria-current="page"
-                  href="#"
-                ></a>
-              </li>
+      <div class="container">    
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" >
+      <span class="navbar-toggler-icon toggler"><i class="bi bi-list fs-2 "></i></span>
+    </button>
+    <div class="offcanvas offcanvas-start togglerBg w-50 ps-0 ps-md-0" tabindex="-1" id="offcanvasNavbar" >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fs-5 fw-bolder" id="offcanvasNavbarLabel"><img src="/asset/image (1).webp" class="image me-4" alt=""> Lotus Beta Analytics</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active fs-1 fw-bolder" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-1 fw-bolder" href="#">About<i class="bi bi-plus"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-1 fw-bolder" href="#">
+             Service <i class="bi bi-plus"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-1 fw-bolder" href="#">
+             Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    
             </div>
-            <div class="p-3 logoLotus2">
+            <div class="p-3 ms-lg-0 logoLotus2">
               <li class="nav-item mb-3 text-light fs-5 fw-bolder box">
                 <p>Follow us</p>
               </li>
@@ -156,7 +193,7 @@
               </div>
             </ul>
         </div>
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="/asset/image1.webp" class="d-block w-100" alt="...">
