@@ -51,12 +51,11 @@
         background: #2c007d;
     }
     .logoLotus3{
-        display: flex;
-        flex-direction: column;
+      display: flex;
         align-items: center;
         justify-content: center;
-        height: 65vh;
-        background: #39029fb0;
+       height: 100vh;
+        background: #2c007d;
     }
     .sideBarIcons {
       color: rgba(116, 110, 110, 0.474);
@@ -100,6 +99,15 @@
     .offcanvas-header{
       margin-top: 7rem;
     }
+    .line{
+      border: solid 2px white;
+      width: 8em;
+      height: 1px;
+    }
+    .P1{
+      text-align: justify;
+      line-height: 40px;
+    }
     </style>
   </head>
   <body>
@@ -127,18 +135,18 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active fs-1 fw-bolder" aria-current="page" href="#">Home</a>
+            <a class="nav-link active fs-1 fw-bolder" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-1 fw-bolder" href="#">About<i class="bi bi-plus"></i></a>
+            <a class="nav-link fs-1 fw-bolder icons" style="--bs-link-hover-color-rgb: 25, 135, 84;" href="#about">About<i class="bi bi-plus"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-1 fw-bolder" href="#">
+            <a class="nav-link fs-1 fw-bolder" href="#service">
              Service <i class="bi bi-plus"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-1 fw-bolder" href="#">
+            <a class="nav-link fs-1 fw-bolder" href="#contact">
              Contact
             </a>
           </li>
@@ -151,7 +159,7 @@
 
     
             </div>
-            <div class="p-3 ms-lg-0 logoLotus2">
+            <div class="p-3 logoLotus2">
               <li class="nav-item mb-3 text-light fs-5 fw-bolder box">
                 <p>Follow us</p>
               </li>
@@ -205,10 +213,20 @@
       <img src="/asset/image001.webp" class="d-block w-100" alt="...">
     </div>
 </div>
-<div class="logoLotus2">
-    <div>
-        <h1> hjdsgfyugdy </h1>
+  </div>
+<div class="logoLotus3 p-5 ms-5">
+    <div class="w-50">
+      <img src="/asset/image (11).jpg" class="img-fluid w-75 ms-5" alt="">
     </div>
+  <div class="w-50">
+    <div class="d-flex align-items-center text-light">
+       <div class="line me-3"> </div> <h3 class="fs-5 fw-bolder">About Us</h3>
+    </div>
+    <h1 class="text-light fw-bolder">Lotus Beta Analytics</h1>
+    <p class="P1 text-light fw-bolder">
+      Lotus Beta Analytics (LBAN) is a company leading the revolutionary approach to Information Communication Technology (ICT) by redefining and reimagining a strategic approach to solutions and service delivery. We are focused on the provision of Information Technology Solutions and Services that are built on a world-class, secured, resilient infrastructure, and delivered according to global best practices in partnership with the world’s leading technology vendors.
+    </p>
+  </div>
 </div>
 </section>
 
